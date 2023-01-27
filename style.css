@@ -3,7 +3,7 @@
     src: url("fonts/Norse-Bold.otf") format("opentype");
 }
 body {
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -75,4 +75,72 @@ img + p {
 
 .info > p:last-child {
     padding-top: 1em;
+}
+
+form > p {
+    font-size: 26px;
+    padding-left: 1.4em;
+    margin-bottom: 0.4em;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding-left: calc(1.4 * 26px);
+    padding-bottom: 1.5em;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px -2px lightgray;
+}
+
+fieldset p {
+    display: flex;
+    flex-direction: column;
+    min-width: 45%;
+    margin-bottom: 0.5em;
+}
+
+input {
+    appearance: none;
+    width: 60%;
+    height: 1.6em;
+    font-size: 16px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 0.2em;
+}
+
+fieldset + button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.6em 2.8em;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(55, 193, 248);
+    box-shadow: 0 2px 4px 2px lightgray;
+    margin-left: calc(1.4 * 26px);
+    margin-top: calc(1.2 * 26px);
+}
+
+form + div {
+    display: flex;
+    flex-direction: row;
+    margin-left: calc(1.4 * 26px);
+    align-items: center;
+    margin-top: 1.4em;
+    font-size: 18px;
+}
+
+p + a {
+    color: rgb(55, 193, 248);
+    margin-left: 0.5em;
+    font-weight: bolder;
+    text-decoration: none;
 }
