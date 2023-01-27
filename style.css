@@ -11,7 +11,7 @@ body {
 
 .image {
     position: relative;
-    width: max(850px, 50%);
+    width: max(950px, 50vw);
     overflow: hidden;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    background-color: rgba(255, 255, 255, 0.4);;
+    background-color: rgba(255, 255, 255, 0.2);;
     display: flex;
     position: absolute;
     top: 8rem;
@@ -43,7 +43,7 @@ img + p {
     margin-top: auto;
     margin-bottom: 0;
     color: white;
-    text-shadow: black 1px 0 2px;
+    text-shadow: gray 1px 0 3px ;
     padding-left: 0.2em;
 }
 
@@ -61,11 +61,11 @@ img + p {
     font-size: 26px;
     /* font-weight: bold; */
     padding-left: 1.4em;
-    padding-right: 12em;
+    padding-right: 7em;
 }
 
 .info > p:first-child {
-    margin-top: 6em;
+    margin-top: 4em;
     margin-bottom: 0.3em;
 }
 
@@ -89,7 +89,7 @@ fieldset {
     /* flex-direction: column; */
     flex-wrap: wrap;
     padding-left: calc(1.4 * 26px);
-    padding-bottom: 1.5em;
+    padding-bottom: 1.9em;
     box-sizing: border-box;
     box-shadow: 0 4px 4px -2px lightgray;
 }
@@ -142,5 +142,5 @@ p + a {
     color: rgb(55, 193, 248);
     margin-left: 0.5em;
     font-weight: bolder;
-    text-decoration: none;
+    text-decoration: none;   
 }
