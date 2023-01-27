@@ -104,10 +104,12 @@ fieldset p {
 input {
     appearance: none;
     width: 60%;
-    height: 1.6em;
+    height: 1.7em;
     font-size: 16px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    padding: 0 10px;
+    margin: 0;
 }
 
 label {
@@ -143,4 +145,13 @@ p + a {
     margin-left: 0.5em;
     font-weight: bolder;
     text-decoration: none;   
+}
+
+/* below are for validations */
+input:focus:invalid {
+    box-shadow: 0 0 5px 1px rgb(251, 183, 183);
+}
+
+input:invalid {
+    box-shadow: none;
 }
